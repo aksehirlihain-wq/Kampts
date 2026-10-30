@@ -1,0 +1,44 @@
+graph TD
+    subgraph Saha_Sistemleri["Saha Donanımları & Bariyer"]
+        Cam[GV-LPR2812-DL LPR Kamera]
+        Sensors[Loop Sensörü & Fotosel]
+        Barrier[Fiziksel Bariyer & PLC]
+        HardwareSafety[Donanımsal İSG & Yangın Rölesi]
+    end
+
+    subgraph Mevcut_Yetki_Sistemi["Fiziksel Yetki Sistemi"]
+        ASManager[GV-ASManager 6.3.0]
+    end
+
+    subgraph KampusPTS_Platform["Kampüs PTS Gelir Yönetim Platformu (.NET 10 LTS)"]
+        ObservationMod[LPR Gözlem Modülü]
+        EvidenceMod[Geçiş Kanıtı Modülü]
+        TariffMod[Tarife & Tahakkuk Modülü]
+        PaymentMod[Ödeme & PSP Modülü]
+        SubledgerMod[PTS Alt Defteri]
+        SyncMod[ERP & ASManager Entegrasyon Portları]
+    end
+
+    subgraph Dis_Sistemler["Dış Finansal & Kurumsal Sistemler"]
+        PSP[Ödeme Kuruluşu / Sanal POS]
+        EinvoiceProvider[GİB e-Fatura Entegratörü]
+        ERP[Kurumsal Muhasebe / ERP]
+        Bank[Banka Hakediş Hesabı]
+    end
+
+    %% İlişkiler
+    Cam -->|PLATE_RECOGNIZED| ObservationMod
+    Sensors -->|Döngü Tetikleme| EvidenceMod
+    ObservationMod --> EvidenceMod
+    EvidenceMod -->|PASSAGE_CONFIRMED| TariffMod
+    TariffMod -->|Charge| PaymentMod
+    PaymentMod <-->|Sanal POS Token / Webhook| PSP
+    PaymentMod -->|Ödeme Onayı| SubledgerMod
+    SubledgerMod -->|e-Fatura Talebi| EinvoiceProvider
+    SubledgerMod -->|Yevmiye Fişi Aktarımı| ERP
+    PSP -.->|Net Takas| Bank
+
+    %% ASManager ve İSG Sınırları
+    SyncMod -.->|Onaylı İş Emri / API| ASManager
+    HardwareSafety ==>|Fiziksel Kesme - Yazılım Bypass Edemez| Barrier
+    EvidenceMod -.->|Çıkış Kararı| Barrier

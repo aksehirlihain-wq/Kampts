@@ -1,0 +1,32 @@
+id,phase,title,options,status,actual_owner,due_date,evidence
+DEC-001,P00,Kurum türü ve gelir sahibi tüzel kişilik,"A Üniversite; B Döner sermaye; C Özel işletmeci; D Çoklu tüzel kişilik",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-002,P00,e-Fatura/e-Arşiv belge türü ve düzenleme zamanı,"Tahsilat anında anlık e-Arşiv; Gün sonu toplu e-Fatura/e-Arşiv; Dinamik eşik tetiklemeli düzenleme",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-003,P00,Donanımsal İSG Güvenlik Rölesi Arayüzü,"Kuru Kontak Röle Araya Giriş; Harici Emniyet PLC; Yangın Paneli Otomatik Tahliye",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-004,P00,Plaka Okuma Güven Eşiği ve Manuel İnceleme Eşiği,"TO_DEFINE_OR_VERIFY (Saha Keşfi Sonrası Belirlenecek)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-005,P00,Otopark Oturumu Serbest Çıkış Süresi (Grace Period),"TO_DEFINE_OR_VERIFY (Kurumsal Tarife Onayı Sonrası)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-006,P00,Zaman Dilimli ve Dinamik Tarife Kademeleri,"TO_DEFINE_OR_VERIFY (Mali Komite Kararı)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-007,P00,Personel ve Öğrenci İndirim Oranları,"TO_DEFINE_OR_VERIFY (Senato / Yönetim Kurulu Kararı)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-008,P00,Fiziksel Bariyer Kumanda Otoritesi,"UNKNOWN (Bariyer kumandası PTS mi, ASManager mı, bağımsız kontrolör mü?)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-009,P00,Çevrimdışı Kapı Çalışma ve Arabellek Stratejisi,"Yerel SQLite Arabelleği; Donanım Flash Bellek; Uç Birim İzin Listesi (Whitelist)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-010,P00,Kayıp Bilet ve Plakasız Araç Çıkış Prosedürü,"TO_DEFINE_OR_VERIFY (İşletme Yönergesi)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-011,P00,Abonelik İptal ve İade Kesinti Politikası,"TO_DEFINE_OR_VERIFY (Döner Sermaye İade Yönergesi)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-012,P00,Mükerrer Plaka Okuma Zaman Tolerans Penceresi,"TO_DEFINE_OR_VERIFY (Saha Trafik Testi)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-013,P00,Bariyer Önü Dinamik QR Kod Geçerlilik Süresi,"TO_DEFINE_OR_VERIFY (Ödeme Güvenlik Protokolü)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-014,P00,Kurumsal PSP Seçimi ve Split-Settlement Modeli,"Tekil Kamu Bankası Sanal POS; Çoklu PSP ve Otomatik Hakediş Dağıtımı",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-015,P00,e-Fatura Özel Entegratör Seçimi ve API Sözleşmesi,"GİB Doğrudan Portal; Kurumsal Özel Entegratör SOAP/REST API",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-016,P00,GV-ASManager 6.3.0 Entegrasyon Protokolü ve İletişim Kanalı,"Resmi REST API; Onaylı İş Emri Dosya Kuyruğu; Bağımsız Yetki Servisi",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-017,P00,Kişisel Veri (Plaka ve Denetim İzi) Saklama Süresi,"TO_DEFINE_OR_VERIFY (KVKK Veri İmha Politikası)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-018,P00,LPR Kamera Görüntüleri Arşivleme Süresi,"TO_DEFINE_OR_VERIFY (Güvenlik ve KVKK Komisyonu Kararı)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-019,P00,İade ve İptal İşlemlerinde Maker-Checker Onay Eşikleri,"TO_DEFINE_OR_VERIFY (İç Kontrol ve Mali Denetim Kriteri)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-020,P00,Yönetici ve Operatör Erişim Güvenlik Seviyesi,"Kurumsal VPN + Çok Faktörlü Doğrulama (2FA); Donanımsal FIDO2 Anahtarı",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-021,P00,Bariyer Arızasında Acil Tahliye Protokolü,"Mekanik Kilit Açma; Güvenlik Butonu + Audit Log; İtfaiye Otomasyonu",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-022,P00,Kaçak ve İhlalli Geçiş Yaptırım Politikası,"TO_DEFINE_OR_VERIFY (Kampüs Güvenlik Yönergesi)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-023,P00,Ticari Tedarikçi ve Kargo Araçları Geçiş Rejimi,"TO_DEFINE_OR_VERIFY (Rektörlük İdari Yönergesi)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-024,P00,Protokol ve VIP Araçları Geçiş İstisnaları,"TO_DEFINE_OR_VERIFY (Rektörlük Protokol Listesi)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-025,P00,Acil Durum Araçları (Ambulans/İtfaiye) Otomatik Geçişi,"Plaka ve Siren/Optik Algılama ile Otomatik Açma; Donanım Kuru Kontak Tetikleme",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-026,P00,Abonelik Mali Hak ve Fiziksel Yetki Senkronizasyon Kuralı,"Anlık Webhook ile ASManager Güncelleme; 15 Dakikalık Batch İş Emri Kuyruğu",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-027,P00,Otopark Dışı Kampüs İçi Hizmetlerin Ücretlendirilmesi Hukuki Yetkisi,"Yalnızca Otopark Kapsamında Kalma; Hukuki İnceleme ve Yönetim Onayı Sonrası Kapsam Genişletme",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-028,P00,Kuruş Yuvarlama Politikası ve Minor-Unit Hassasiyeti,"Bankacı Yuvarlaması (Half-to-even); Aşağı Yuvarlama (Truncate); Standart Kuruş",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-029,P00,PostgreSQL Yüksek Erişilebilirlik ve Replikasyon Mimarisi,"Streaming Replication; Patroni HA Kümesi; Bulut Yönetilen Veritabanı",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-030,P00,Felaket Kurtarma ve Yedekleme Sıklığı (RPO/RTO),"TO_DEFINE_OR_VERIFY (Kurumsal BT Felaket Kurtarma Planı)",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE
+DEC-031,P00,Alt Defter ERP Mutabakat Sıklığı ve Modu,"İşlem Bazında Anlık Senkron Fiş; Saatlik Mikro-Batch; Gün Sonu Konsolide Yevmiye Fişi",DECISION_REQUIRED,TO_ASSIGN,TBD,NONE

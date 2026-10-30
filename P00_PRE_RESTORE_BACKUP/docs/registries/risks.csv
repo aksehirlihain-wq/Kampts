@@ -1,0 +1,16 @@
+Id,Title,Category,Probability,Impact,Mitigation,Status
+RISK-001,DEC-001 Mali Model Kararının Gecikmesi,Financial,HIGH,CRITICAL,Yazılım mimarisini çoklu tüzel kişiliği destekleyecek esneklikte tutma,ACTIVE
+RISK-002,GV-ASManager Doğrudan Yazma İhlali ve Veri Bozulması,Integration,MEDIUM,CRITICAL,Veritabanı doğrudan erişimini mimari düzeyde yasaklama ve port arayüzü tanımlama,ACTIVE
+RISK-003,Donanımsal Bariyer Sıkışması ve İSG Kazası,Safety,LOW,CRITICAL,Fotosel ve mekanik güvenlik zincirini yazılım komutlarının mutlak üstünde tutma,ACTIVE
+RISK-004,Sanal POS Webhook Ağ Kesintisi ve Mükerrer Tahsilat,Financial,MEDIUM,HIGH,Kriptografik idempotency anahtarı ve iki aşamalı mutabakat uygulama,ACTIVE
+RISK-005,Plaka Okuma Yanılgısı ile Yanlış Araç Oturumu,Observation,MEDIUM,MEDIUM,Çift kamera açısı ve döngü sensörü korelasyonu ile kesin kanıt arama,ACTIVE
+RISK-006,Kampüs Omurga Ağ Kesintisinde Kapıların Kilitlenmesi,Resilience,MEDIUM,HIGH,Kapı kontrol uç biriminde 72 saatlik yerel arabellek ve offline mod sağlama,ACTIVE
+RISK-007,KVKK İhlali ve Plaka/Kimlik Bilgisi Sızıntısı,Compliance,LOW,CRITICAL,Tüm log akışlarında PII maskeleme ve veritabanı düzeyinde şifreleme,ACTIVE
+RISK-008,e-Fatura Entegratörü Hizmet Kesintisi,Invoicing,MEDIUM,MEDIUM,Transactional outbox ile fatura isteklerini dayanıklı kuyruğa alma ve yeniden deneme,ACTIVE
+RISK-009,ERP Muhasebe Hesap Planı Uyuşmazlığı,Financial,HIGH,HIGH,PTS alt defterinde esnek hesap eşleştirme parametreleri kurgulama,ACTIVE
+RISK-010,Kuyruk Oluşumu ve Yoğun Saatlerde Bariyer Gecikmesi,Performance,HIGH,HIGH,P99 LPR işleme süresini 500 ms altında tutacak asenkron mimari,ACTIVE
+RISK-011,Yetkisiz Bariyer Açma Girişimi ve Güvenlik Zaafiyeti,Security,LOW,HIGH,Tüm manuel kumanda işlemlerini çift onay ve değiştirilemez denetim günlüğüne bağlama,ACTIVE
+RISK-012,Kart Bilgisi Sızması (PCI-DSS İhlali),Security,LOW,CRITICAL,Sistemde hiçbir kart verisi tutmama ve doğrudan PSP hosted ödeme kullanma,ACTIVE
+RISK-013,Kuruş Yuvarlama Farkı Nedeniyle Mizan Tutarsızlığı,Financial,MEDIUM,MEDIUM,Bigint minor-unit (kuruş) hassasiyeti ve kurumsal yuvarlama politikası onayı,ACTIVE
+RISK-014,Geçiş Yönü Karışıklığı ile Ters Şerit Girişi,Operations,MEDIUM,MEDIUM,Çift sensör dizilimi ile yön vektörünü fiziksel olarak doğrulama,ACTIVE
+RISK-015,İmzalanmamış Testler Nedeniyle Erken Canlıya Çıkış Baskısı,Governance,HIGH,CRITICAL,G0..G9 kapı disiplini ve kanıtsız kapı geçiş yasağını katı şekilde uygulama,ACTIVE

@@ -1,0 +1,9 @@
+id,phase,title,decision_ids,requirement_ids,gates,blocks,status
+BLK-001,P00,Mali Model ve Tüzel Kişilik Kararı (DEC-001) Eksikliği,DEC-001,REQ-001|REQ-003,G0|G4|G5,Hasılat sahibi tüzel kişilik ve MoR netleşmeden ödeme ve fatura tanzim edilemez,OPEN
+BLK-002,P00,Fiziksel Bariyer Kumanda Otoritesi Kararı (DEC-008) Belirsizliği,DEC-008,REQ-004|REQ-020,G0|G1|G7,Bariyer kumanda yetkisi netleşmeden saha çıkış kodu yazılamaz (UNKNOWN),OPEN
+BLK-003,P00,GV-ASManager 6.3.0 Resmi Entegrasyon Sözleşmesi Yokluğu,DEC-002,REQ-009|REQ-033,G0|G1|G4,Vendor resmi API arayüzü olmadan personel fiziksel yetki senkronizasyonu başlatılamaz,OPEN
+BLK-004,P00,Kurumsal PSP Sözleşmesi ve Test Sanal POS Bilgileri Eksikliği,DEC-014,REQ-034|REQ-035,G0|G5,Sanal POS sözleşmesi ve test anahtarları olmadan ödeme akışı test edilemez,OPEN
+BLK-005,P00,e-Fatura Entegratörü API Dokümantasyonu ve Test Hesabı Yokluğu,DEC-015,REQ-037,G0|G5,GİB uyumlu test portalı olmadan e-belge düzenleme entegrasyonu tamamlanamaz,OPEN
+BLK-006,P00,Kurumsal ERP Hesap Planı ve Entegrasyon Arayüzü Tanımsızlığı,DEC-031,REQ-038|REQ-039,G0|G8,Alt defter hesap kodları eşleştirme tablosu onaylanmadan ERP aktarımı yapılamaz,OPEN
+BLK-007,P00,Saha Donanım Güvenlik Zinciri ve Röle Kablolama Doğrulama Eksikliği,DEC-003,REQ-008|REQ-016,G0|G1|G7,Fotosel ve loop sensörlerinin kuru kontak emniyet test raporu tanzim edilmeden bariyer açılamaz,OPEN
+BLK-008,P00,G0 Yönetişim Kapısı ve İmzalı RACI Atamalarının Tamamlanmamış Olması,DEC-001|DEC-008,REQ-001..040,G0,Kurumsal imza sirküleri ve yetkili makam onayı olmadan G0 onaylanamaz,OPEN

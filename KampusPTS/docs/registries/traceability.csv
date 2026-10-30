@@ -1,0 +1,57 @@
+requirement_id,type,title,use_case_id,test_case_id,evidence_id,gate,status
+REQ-001,Functional,Kapsam ve Yönetişim Temeli,UC-001,TC-001,NONE,G0,DESIGNED_NOT_TESTED
+REQ-002,Functional,Kriptografik Olay Zarfı Sözleşmesi,UC-001,TC-001,NONE,G0,DESIGNED_NOT_TESTED
+REQ-003,Functional,Değişmez Alt Defter Modeli,UC-008,TC-008,NONE,G0,DESIGNED_NOT_TESTED
+REQ-004,Functional,Mali Hak ve Fiziksel Yetki Ayrımı,UC-005,TC-005,NONE,G0,DESIGNED_NOT_TESTED
+REQ-005,Functional,Güvenli Varsayılan Yapılandırma,UC-000,TC-006,NONE,G0,DESIGNED_NOT_TESTED
+REQ-006,Functional,GV-LPR2812-DL Kamera Envanteri ve Açı Tespiti,UC-001,TC-001,NONE,G1,DESIGNED_NOT_TESTED
+REQ-007,Functional,Manyetik Döngü Sensörü Tespiti,UC-002,TC-002,NONE,G1,DESIGNED_NOT_TESTED
+REQ-008,Functional,Fotosel ve Güvenlik Donanımı İncelemesi,UC-002,TC-002,NONE,G1,DESIGNED_NOT_TESTED
+REQ-009,Functional,GV-ASManager 6.3.0 Arayüz Tespiti,UC-005,TC-005,NONE,G1,DESIGNED_NOT_TESTED
+REQ-010,Functional,Kapı Yerel Arabellek ve Elektrik Altyapısı,UC-000,TC-010,NONE,G1,DESIGNED_NOT_TESTED
+REQ-011,Functional,Plaka Okuma ve Olay Yakalama (PLATE_RECOGNIZED),UC-001,TC-001,NONE,G2,DESIGNED_NOT_TESTED
+REQ-012,Functional,Gözlem Görüntü Hash Doğrulama,UC-001,TC-001,NONE,G2,DESIGNED_NOT_TESTED
+REQ-013,Functional,Çoklu Kamera ve Şerit Tekilleştirme,UC-001,TC-001,NONE,G2,DESIGNED_NOT_TESTED
+REQ-014,Functional,Plaka Karakter Normalizasyonu,UC-001,TC-001,NONE,G2,DESIGNED_NOT_TESTED
+REQ-015,Functional,Düşük Güven Skorlu Plaka Kuyruğu,UC-001,TC-001,NONE,G2,DESIGNED_NOT_TESTED
+REQ-016,Functional,Fiziksel Döngü Sensörü Tetiklemesi,UC-002,TC-002,NONE,G2,DESIGNED_NOT_TESTED
+REQ-017,Functional,Gözlem ve Döngü Korelasyonu,UC-002,TC-002,NONE,G2,DESIGNED_NOT_TESTED
+REQ-018,Functional,Geçiş Kanıtı Üretimi (PASSAGE_CONFIRMED),UC-002,TC-002,NONE,G2,DESIGNED_NOT_TESTED
+REQ-019,Functional,Mükerrer Geçiş Engelleme,UC-002,TC-002,NONE,G2,DESIGNED_NOT_TESTED
+REQ-020,Functional,Geçiş Yönü Kesinleştirme,UC-002,TC-002,NONE,G2,DESIGNED_NOT_TESTED
+REQ-021,Functional,Otopark Mali Oturumu Başlatma,UC-003,TC-003,NONE,G4,DESIGNED_NOT_TESTED
+REQ-022,Functional,Otopark Mali Oturumu Kapatma,UC-003,TC-003,NONE,G4,DESIGNED_NOT_TESTED
+REQ-023,Functional,Serbest Süre (Grace Period) Yönetimi,UC-003,TC-003,NONE,G4,DESIGNED_NOT_TESTED
+REQ-024,Functional,Açık Oturum Zaman Aşımı,UC-003,TC-003,NONE,G4,DESIGNED_NOT_TESTED
+REQ-025,Functional,İstisnai Oturum Düzeltme,UC-003,TC-003,NONE,G4,DESIGNED_NOT_TESTED
+REQ-026,Functional,Kural Tabanlı Tarife Motoru,UC-004,TC-004,NONE,G4,DESIGNED_NOT_TESTED
+REQ-027,Functional,Personel ve Öğrenci İndirimi,UC-004,TC-004,NONE,G4,DESIGNED_NOT_TESTED
+REQ-028,Functional,Kademeli ve Dinamik Ücretlendirme,UC-004,TC-004,NONE,G4,DESIGNED_NOT_TESTED
+REQ-029,Functional,Tavan ve Taban Ücret Sınırları,UC-004,TC-004,NONE,G4,DESIGNED_NOT_TESTED
+REQ-030,Functional,Borç Tahakkuku (Charge) Oluşturma,UC-004,TC-004,NONE,G4,DESIGNED_NOT_TESTED
+REQ-031,Functional,Abonelik Planları Yönetimi,UC-005,TC-005,NONE,G4,DESIGNED_NOT_TESTED
+REQ-032,Functional,Abonelik Mali Hak Takibi,UC-005,TC-005,NONE,G4,DESIGNED_NOT_TESTED
+REQ-033,Functional,ASManager Yetki Senkronizasyonu,UC-005,TC-005,NONE,G4,DESIGNED_NOT_TESTED
+REQ-034,Functional,Sanal POS Kredi Kartı Tahsilatı,UC-006,TC-006,NONE,G5,DESIGNED_NOT_TESTED
+REQ-035,Functional,Ödeme Idempotency Koruması,UC-006,TC-006,NONE,G5,DESIGNED_NOT_TESTED
+REQ-036,Functional,Dinamik QR Kod ile Ödeme,UC-006,TC-006,NONE,G5,DESIGNED_NOT_TESTED
+REQ-037,Functional,GİB Standartlarında e-Fatura Tanzimi,UC-007,TC-007,NONE,G5,DESIGNED_NOT_TESTED
+REQ-038,Functional,Alt Defter Çift Taraflı Kayıt Üretimi,UC-008,TC-008,NONE,G5,DESIGNED_NOT_TESTED
+REQ-039,Functional,Kurumsal ERP Muhasebe Aktarımı,UC-009,TC-008,NONE,G8,DESIGNED_NOT_TESTED
+REQ-040,Functional,Denetim Günlüğü ve KVKK Maskeleme,UC-010,TC-006,NONE,G3,DESIGNED_NOT_TESTED
+NFR-001,NonFunctional,Kimlik ve Oturum Güvenliği,UC-000,TC-006,NONE,G0,DESIGNED_NOT_TESTED
+NFR-002,NonFunctional,Kişisel Verilerin Korunması (KVKK 6698),UC-010,TC-006,NONE,G0,DESIGNED_NOT_TESTED
+NFR-003,NonFunctional,PCI-DSS Kapsam İzolasyonu,UC-006,TC-006,NONE,G0,DESIGNED_NOT_TESTED
+NFR-004,NonFunctional,ASManager Veritabanı Yalıtımı,UC-005,TC-005,NONE,G0,DESIGNED_NOT_TESTED
+NFR-005,NonFunctional,Fiziksel Güvenlik ve İSG Donanım Önceliği,UC-002,TC-002,NONE,G0,DESIGNED_NOT_TESTED
+NFR-006,NonFunctional,LPR Gözlem İşleme Gecikmesi,UC-001,TC-001,NONE,G1,DESIGNED_NOT_TESTED
+NFR-007,NonFunctional,Geçiş Kanıtı Korelasyon Penceresi,UC-002,TC-002,NONE,G1,DESIGNED_NOT_TESTED
+NFR-008,NonFunctional,Ağ Kesintisi Yerel Arabellek Dayanıklılığı,UC-000,TC-010,NONE,G1,DESIGNED_NOT_TESTED
+NFR-009,NonFunctional,Veri Tabanı Mantıksal Şema İzolasyonu,UC-000,TC-008,NONE,G2,DESIGNED_NOT_TESTED
+NFR-010,NonFunctional,Zaman Damgası ve Para Birimi Standartları,UC-008,TC-008,NONE,G3,DESIGNED_NOT_TESTED
+NFR-011,NonFunctional,Ödeme Idempotency Güvencesi,UC-006,TC-006,NONE,G4,DESIGNED_NOT_TESTED
+NFR-012,NonFunctional,Transactional Outbox Mesajlaşma Garantisi,UC-000,TC-001,NONE,G5,DESIGNED_NOT_TESTED
+NFR-013,NonFunctional,VUK 509 e-Fatura Mevzuat Uyumu,UC-007,TC-007,NONE,G5,DESIGNED_NOT_TESTED
+NFR-014,NonFunctional,Alt Defter Çift Taraflı Denge ve Reversal,UC-008,TC-008,NONE,G5,DESIGNED_NOT_TESTED
+NFR-015,NonFunctional,Eşzamanlı Şerit ve Kapı Ölçeklenebilirliği,UC-001,TC-001,NONE,G6,DESIGNED_NOT_TESTED
+NFR-016,NonFunctional,ERP Yevmiye Fişi Mutabakat Güvencesi,UC-009,TC-008,NONE,G8,DESIGNED_NOT_TESTED

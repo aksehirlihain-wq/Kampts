@@ -1,0 +1,21 @@
+{
+  "system": {
+    "environment": "DEV_LAB",
+    "dev_lab_isolated_mode": true,
+    "strict_epistemic_mode": true
+  },
+  "flags": {
+    "enable_real_barrier_commands": false,
+    "enable_psp_live_capture": false,
+    "enable_einvoice_live_issuance": false,
+    "enable_erp_live_posting": false,
+    "enable_split_settlement_live": false,
+    "enable_safety_interlock_bypass": false
+  },
+  "safety": {
+    "hardware_safety_interlock_enforced": true,
+    "photocell_override_forbidden": true,
+    "fire_alarm_evacuation_priority": true
+  },
+  "notes": "All live operational integration flags are strictly FALSE by default. Hardware safety interlock bypass cannot be enabled under any software condition."
+}

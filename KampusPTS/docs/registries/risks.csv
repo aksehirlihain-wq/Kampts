@@ -1,0 +1,16 @@
+id,phase,title,probability,impact,mitigation,status
+RISK-001,P00,DEC-001 Mali Model ve Tüzel Kişilik Kararının Gecikmesi,HIGH,CRITICAL,Yazılım mimarisini çoklu tüzel kişiliği destekleyecek esneklikte tutma,OPEN_ASSUMED
+RISK-002,P00,GV-ASManager 6.3.0 Doğrudan Yazma İhlali ve Veri Bozulması,MEDIUM,CRITICAL,Veritabanı doğrudan SQL erişimini mimari düzeyde yasaklama ve port arayüzü tanımlama,OPEN_ASSUMED
+RISK-003,P00,Donanımsal Bariyer Sıkışması ve İSG Kazası Riski,LOW,CRITICAL,Fotosel ve mekanik güvenlik zincirini yazılım komutlarının mutlak üstünde tutma,OPEN_ASSUMED
+RISK-004,P00,Sanal POS Webhook Ağ Kesintisi ve Mükerrer Tahsilat,MEDIUM,HIGH,Kriptografik idempotency anahtarı ve iki aşamalı mutabakat uygulama,OPEN_ASSUMED
+RISK-005,P00,Plaka Okuma Yanılgısı ile Yanlış Araç Oturumu Açılması,MEDIUM,MEDIUM,Çift kamera açısı ve döngü sensörü korelasyonu ile kesin kanıt arama,OPEN_ASSUMED
+RISK-006,P00,Kampüs Omurga Ağ Kesintisinde Kapıların Kilitlenmesi,MEDIUM,HIGH,Kapı kontrol uç biriminde yerel arabellek ve offline mod sağlama,OPEN_ASSUMED
+RISK-007,P00,KVKK İhlali ve Plaka/Kimlik Bilgisi Sızıntısı,LOW,CRITICAL,Tüm log akışlarında PII maskeleme ve veritabanı düzeyinde şifreleme,OPEN_ASSUMED
+RISK-008,P00,e-Fatura Entegratörü Hizmet Kesintisi ve Fatura Gecikmesi,MEDIUM,MEDIUM,Transactional outbox ile fatura isteklerini dayanıklı kuyruğa alma ve yeniden deneme,OPEN_ASSUMED
+RISK-009,P00,ERP Muhasebe Hesap Planı Uyuşmazlığı ve Fiş Dengesizliği,HIGH,HIGH,PTS alt defterinde esnek hesap eşleştirme parametreleri kurgulama,OPEN_ASSUMED
+RISK-010,P00,Yoğun Saatlerde Bariyer Önü Kuyruk Oluşumu,HIGH,HIGH,Asenkron olay işleme ve optimize edilmiş LPR kuyruğu,OPEN_ASSUMED
+RISK-011,P00,Yetkisiz Bariyer Açma Girişimi ve Güvenlik Zaafiyeti,LOW,HIGH,Tüm manuel kumanda işlemlerini çift onay ve değiştirilemez denetim günlüğüne bağlama,OPEN_ASSUMED
+RISK-012,P00,Kredi Kartı Bilgisi Sızması (PCI-DSS İhlali),LOW,CRITICAL,Sistemde hiçbir kart verisi tutmama ve doğrudan lisanslı PSP hosted ödeme kullanma,OPEN_ASSUMED
+RISK-013,P00,Kuruş Yuvarlama Farkı Nedeniyle Mizan Tutarsızlığı,MEDIUM,MEDIUM,Bigint minor-unit (kuruş) hassasiyeti ve kurumsal yuvarlama politikası onayı,OPEN_ASSUMED
+RISK-014,P00,Geçiş Yönü Karışıklığı ile Ters Şerit Girişi,MEDIUM,MEDIUM,Çift sensör dizilimi ile yön vektörünü fiziksel olarak doğrulama,OPEN_ASSUMED
+RISK-015,P00,İmzalanmamış Testler Nedeniyle Erken Canlıya Çıkış Baskısı,HIGH,CRITICAL,G0..G9 kapı disiplini ve kanıtsız kapı geçiş yasağını katı şekilde uygulama,OPEN_ASSUMED

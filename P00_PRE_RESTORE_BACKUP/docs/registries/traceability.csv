@@ -1,0 +1,57 @@
+RequirementId,Type,Description,UseCaseId,TestCaseId,EvidenceId,Gate,Status
+REQ-001,Functional,Plaka Okuma ve Olay Yakalama,UC-001,TC-001,NONE,G1,DESIGNED
+REQ-002,Functional,Gözlem Görüntü Hash'leme,UC-001,TC-001,NONE,G1,DESIGNED
+REQ-003,Functional,Çoklu Kamera ve Şerit Desteği,UC-001,TC-001,NONE,G1,DESIGNED
+REQ-004,Functional,Plaka Format Normalizasyonu,UC-001,TC-001,NONE,G1,DESIGNED
+REQ-005,Functional,Düşük Güven Skorlu Plaka Ayrıştırma,UC-001,TC-001,NONE,G1,DESIGNED
+REQ-006,Functional,Fiziksel Döngü Sensörü Tetiklemesi,UC-002,TC-002,NONE,G1,DESIGNED
+REQ-007,Functional,Fotosel ve Güvenlik Sensörü Entegrasyonu,UC-002,TC-002,NONE,G1,DESIGNED
+REQ-008,Functional,Gözlem ve Sensör Korelasyonu,UC-002,TC-002,NONE,G1,DESIGNED
+REQ-009,Functional,Mükerrer Geçiş Filtreleme,UC-002,TC-002,NONE,G1,DESIGNED
+REQ-010,Functional,Geçiş Yönü Tespiti,UC-002,TC-002,NONE,G1,DESIGNED
+REQ-011,Functional,Otopark Mali Oturumu Başlatma,UC-003,TC-003,NONE,G2,DESIGNED
+REQ-012,Functional,Otopark Mali Oturumu Kapatma,UC-003,TC-003,NONE,G2,DESIGNED
+REQ-013,Functional,Serbest Süre (Grace Period) Yönetimi,UC-003,TC-003,NONE,G2,DESIGNED
+REQ-014,Functional,Açık Kalan Oturumların Zaman Aşımı,UC-003,TC-003,NONE,G2,DESIGNED
+REQ-015,Functional,İstisnai Oturum Düzeltme,UC-003,TC-003,NONE,G2,DESIGNED
+REQ-016,Functional,Kural Tabanlı Tarife Motoru,UC-004,TC-004,NONE,G2,DESIGNED
+REQ-017,Functional,Personel ve Öğrenci İndirimleri,UC-004,TC-004,NONE,G2,DESIGNED
+REQ-018,Functional,Kademeli Ücretlendirme,UC-004,TC-004,NONE,G2,DESIGNED
+REQ-019,Functional,Tavan ve Taban Fiyat Sınırları,UC-004,TC-004,NONE,G2,DESIGNED
+REQ-020,Functional,Fiyat Teklifi (Quote) Üretimi,UC-004,TC-004,NONE,G2,DESIGNED
+REQ-021,Functional,Abonelik Planları Tanımlama,UC-005,TC-005,NONE,G2,DESIGNED
+REQ-022,Functional,Mali Hak Takibi (financial=ACTIVE),UC-005,TC-005,NONE,G2,DESIGNED
+REQ-023,Functional,Fiziksel Yetki Ayrımı (access=VERIFIED_ACTIVE),UC-005,TC-005,NONE,G2,DESIGNED
+REQ-024,Functional,Çoklu Araçlı Tek Abone Desteği,UC-005,TC-005,NONE,G2,DESIGNED
+REQ-025,Functional,Abonelik Süre Sonu ve Yenileme,UC-005,TC-005,NONE,G2,DESIGNED
+REQ-026,Functional,Sanal POS ile Kredi Kartı Tahsilatı,UC-006,TC-006,NONE,G4,DESIGNED
+REQ-027,Functional,Ödeme Idempotency Güvencesi,UC-006,TC-006,NONE,G4,DESIGNED
+REQ-028,Functional,Mobil QR Kod ile Ödeme,UC-006,TC-006,NONE,G4,DESIGNED
+REQ-029,Functional,Ödeme İade ve İptal Yönetimi,UC-006,TC-006,NONE,G4,DESIGNED
+REQ-030,Functional,PSP Webhook Doğrulama,UC-006,TC-006,NONE,G4,DESIGNED
+REQ-031,Functional,e-Fatura ve e-Arşiv Üretimi,UC-007,TC-007,NONE,G4,DESIGNED
+REQ-032,Functional,Fatura İptal ve İade Belgesi,UC-007,TC-007,NONE,G4,DESIGNED
+REQ-033,Functional,Vergi ve Tevkifat Ayrımı,UC-007,TC-007,NONE,G4,DESIGNED
+REQ-034,Functional,PTS Çift Taraflı Alt Defteri,UC-008,TC-008,NONE,G5,DESIGNED
+REQ-035,Functional,Silinemez Yevmiye Kaydı Disiplini,UC-008,TC-008,NONE,G5,DESIGNED
+REQ-036,Functional,Ters Kayıt (Reversal) ile Düzeltme,UC-008,TC-009,NONE,G5,DESIGNED
+REQ-037,Functional,ERP Muhasebe Fiş Aktarımı,UC-009,TC-008,NONE,G8,DESIGNED
+REQ-038,Functional,Gün Sonu Mutabakat Raporlama,UC-009,TC-008,NONE,G8,DESIGNED
+REQ-039,Functional,Yetkisiz Geçiş ve İhlal Tespiti,UC-010,TC-002,NONE,G3,DESIGNED
+REQ-040,Functional,Kişisel Veri ve Güvenlik Denetim İzi,UC-010,TC-006,NONE,G3,DESIGNED
+NFR-001,NonFunctional,Plaka Okuma ve Tanıma Gecikmesi,UC-001,TC-001,NONE,G1,DESIGNED
+NFR-002,NonFunctional,Geçiş Kanıtı Korelasyon Hızı,UC-002,TC-002,NONE,G1,DESIGNED
+NFR-003,NonFunctional,Ödeme İdempotent İşlem Süresi,UC-006,TC-006,NONE,G4,DESIGNED
+NFR-004,NonFunctional,Sistem Kullanılabilirlik ve Çalışma Oranı,UC-000,TC-010,NONE,G6,DESIGNED
+NFR-005,NonFunctional,Ağ Kesintisi Çevrimdışı Çalışma,UC-000,TC-010,NONE,G6,DESIGNED
+NFR-006,NonFunctional,PCI-DSS Kapsam İzolasyonu,UC-006,TC-006,NONE,G3,DESIGNED
+NFR-007,NonFunctional,KVKK Veri Maskeleme ve Şifreleme,UC-010,TC-006,NONE,G3,DESIGNED
+NFR-008,NonFunctional,Veri Tabanı İletişim Şifreleme,UC-000,TC-006,NONE,G3,DESIGNED
+NFR-009,NonFunctional,Görevler Ayrılığı (SoD) Güvencesi,UC-010,TC-005,NONE,G3,DESIGNED
+NFR-010,NonFunctional,Eşzamanlı Kapı ve Şerit Kapasitesi,UC-001,TC-001,NONE,G6,DESIGNED
+NFR-011,NonFunctional,Günlük Geçiş Hacmi Ölçeklenebilirliği,UC-001,TC-001,NONE,G6,DESIGNED
+NFR-012,NonFunctional,VUK 509 e-Fatura Mevzuat Uyumu,UC-007,TC-007,NONE,G4,DESIGNED
+NFR-013,NonFunctional,Alt Defter Çift Taraflı Denge,UC-008,TC-008,NONE,G5,DESIGNED
+NFR-014,NonFunctional,Dağıtık İzlenebilirlik (CorrelationId),UC-000,TC-001,NONE,G5,DESIGNED
+NFR-015,NonFunctional,Stratejik Sistem ve Audit Logları,UC-010,TC-006,NONE,G3,DESIGNED
+NFR-016,NonFunctional,Modüler Monolit Bağımlılık Yalıtımı,UC-000,TC-008,NONE,G5,DESIGNED

@@ -1,0 +1,11 @@
+id,phase_range,title,responsible_role,status,evidence_required,no_go_criteria
+G0,P00,Kurumsal Proje Temeli Mimari Anayasa ve Kanıt Kayıtları,Çözüm Mimarı / Kurumsal Komite,NOT_APPROVED,Anayasa K-01..K-12 Kütükler G0 Checklist SHA-256 Manifest,Resmi kurumsal imza sirküleri ve DEC-001 mali model onayı eksikliği
+G1,P01–P04,Saha Keşfi Cihaz Envanteri ve Entegrasyon Sınırları,Saha Mühendisi / Güvenlik Şube,NOT_STARTED,Saha LPR inceleme raporu GV-ASManager 6.3.0 protokol dökümü,P00 kapısı onaylanmadan saha keşfi başlatılamaz
+G2,P05–P06,Veri Modeli Şema Dondurma ve İletişim Protokolleri,Veri Mimarı / Güvenlik Sorumlusu,NOT_STARTED,EF Core şema tasarımları ADR kayıtları KVKK veri haritası,Önceki aşamaların tamamlanmamış olması
+G3,P07–P10,Güvenlik KVKK PCI-DSS ve Dayanıklı Outbox,Bilgi Güvenliği Yetkilisi (CISO),NOT_STARTED,Statik güvenlik analiz raporu (SAST) sızma testi tasarım onayı,Geliştirme öncesi aşama
+G4,P11–P15,Tarife Motoru Abonelik ve Finansal Durum Makinesi,Entegrasyon Mimarı / ERP Sorumlusu,NOT_STARTED,Tarife kuralları sözleşme testleri durum makinesi testleri,Port testleri henüz koşulmadı
+G5,P16–P19,PSP Entegrasyon Portları e-Fatura ve Alt Defter,Baş Yazılım Mimarı,NOT_STARTED,Çekirdek modül unit testleri Transactional Outbox testleri,Çekirdek kodlama henüz başlamadı
+G6,P20–P22,DEV-LAB Simülasyon İdempotency ve Yük Kabulü,Test Mimarı / Kalite Güvence Lideri,NOT_STARTED,Sanal kapı sahte yük ve idempotency simülasyon sonuçları,Simülasyon ortamı henüz hazır değil
+G7,P23–P28,Pilot Saha Entegrasyonu ve Donanım Eşleşmesi,Saha Kurulum Lideri / Donanım Uzmanı,NOT_STARTED,Pilot kapıda çift döngü ve bariyer kontrol test kanıtları,Pilot saha tanımlanmadı
+G8,P29–P31,UAT ERP Mutabakatı ve Mali Kabul,Döner Sermaye Müdürü / Mali Denetçi,NOT_STARTED,1000 örnek işlem ERP ve banka alt defter mutabakat kanıtı,UAT aşamasına gelinmedi
+G9,P32–P33,Canlıya Geçiş (Go-Live) ve Nihai Devir,İcra Kurulu / Rektörlük,NOT_STARTED,Tüm kapı kanıtları geri dönüş (rollback) planı SLA protokolü,Nihai üretim onayı henüz gündemde değil

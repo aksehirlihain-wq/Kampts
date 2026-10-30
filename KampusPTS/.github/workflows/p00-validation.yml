@@ -1,0 +1,31 @@
+name: P00 Architecture and Registries Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-p00:
+    name: Validate P00 Registries and Architecture
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Validate P00 Structure & Registries
+        run: python3 tools/validate_p00.py
+
+      - name: Run P00 Unit Tests
+        run: python3 -m unittest tests.test_validate_p00 -v
+
+      - name: Check JSON Validity
+        run: |
+          python3 -m json.tool config/features.example.json > /dev/null
+          python3 -m json.tool docs/architecture/event-envelope.schema.json > /dev/null

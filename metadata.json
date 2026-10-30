@@ -1,0 +1,6 @@
+{
+  "name": "Kampüs PTS — Gelir Yönetim Platformu (P00)",
+  "description": "Kampüs PTS Gelir Yönetim Platformu P00 Kurumsal Proje Temeli, Mimari Anayasa, Kanıt ve Karar Kayıtları Konsolu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

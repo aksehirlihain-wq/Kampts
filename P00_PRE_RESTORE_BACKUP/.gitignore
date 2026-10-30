@@ -1,0 +1,25 @@
+# Build & Binary Outputs
+bin/
+obj/
+dist/
+node_modules/
+*.user
+*.suo
+*.log
+
+# Environment & Secrets
+.env
+.env.local
+*.pfx
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db

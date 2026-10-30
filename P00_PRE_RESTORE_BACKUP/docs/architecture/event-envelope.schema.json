@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kampuspts.local/schemas/event-envelope.v1.json",
+  "title": "KampusPtsEventEnvelope",
+  "description": "Standard durable event envelope contract for Kampus PTS modular monolith and asynchronous outbox dispatching.",
+  "type": "object",
+  "required": [
+    "eventId",
+    "eventType",
+    "schemaVersion",
+    "occurredAtUtc",
+    "receivedAtUtc",
+    "sourceSystem",
+    "correlationId",
+    "causationId",
+    "idempotencyKey",
+    "payloadHash",
+    "tenantId",
+    "legalEntityId",
+    "payload"
+  ],
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for this specific event occurrence."
+    },
+    "eventType": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "description": "Domain event type name (e.g., PassageConfirmed, PaymentCaptured, JournalEntryPosted)."
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "Semantic schema version of the event envelope and payload."
+    },
+    "occurredAtUtc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the domain event occurred in UTC."
+    },
+    "receivedAtUtc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the event was ingested or recorded into the outbox in UTC."
+    },
+    "sourceSystem": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 50,
+      "description": "Source module or subsystem producing the event."
+    },
+    "correlationId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Trace correlation identifier across the distributed execution flow."
+    },
+    "causationId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identifier of the command or parent event that caused this event."
+    },
+    "idempotencyKey": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 128,
+      "description": "Idempotency key guaranteeing duplicate dispatch suppression."
+    },
+    "payloadHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Cryptographic SHA-256 hash of the canonical payload."
+    },
+    "tenantId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "description": "Tenant or campus identifier for multi-tenancy isolation."
+    },
+    "legalEntityId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "description": "Legal business entity identifier according to financial authority matrix."
+    },
+    "payload": {
+      "type": "object",
+      "description": "Domain-specific strongly-typed event payload."
+    }
+  },
+  "additionalProperties": false
+}

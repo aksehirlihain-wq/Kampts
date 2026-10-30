@@ -1,0 +1,9 @@
+Id,Title,Category,Impact,Owner,ResolutionPath,Status
+BLK-001,Mali Model ve Tüzel Kişilik Kararı (DEC-001) Eksikliği,Financial,CRITICAL,Rektörlük / Üst Yönetim,Kurumsal üst yönetimin Model A/B/C/D seçeneklerinden birini onaylaması,OPEN
+BLK-002,Fiziksel Bariyer Kumanda Otoritesi Kararı (DEC-008) Belirsizliği,Control,CRITICAL,Güvenlik Şube / Saha Komitesi,Donanım ve yazılım bariyer kontrol sorumlusunun tayin edilmesi,OPEN
+BLK-003,GV-ASManager 6.3.0 Resmi Entegrasyon Sözleşmesi Yokluğu,Integration,HIGH,Bilgi İşlem / Güvenlik Şube,Vendor onaylı SDK/API dokümanı ve sandbox ortamının tahsis edilmesi,OPEN
+BLK-004,Kurumsal PSP Sözleşmesi ve Test Sanal POS Bilgileri Eksikliği,Financial,HIGH,Döner Sermaye / Satın Alma,Kurumsal PSP sözleşmesinin imzalanması ve test merchant anahtarlarının temini,OPEN
+BLK-005,e-Fatura Entegratörü API Dokümantasyonu ve Test Hesabı Yokluğu,Invoicing,HIGH,Mali İşler / Döner Sermaye,GİB uyumlu test portalı veya entegratör API anahtarlarının sağlanması,OPEN
+BLK-006,Kurumsal ERP Hesap Planı ve Entegrasyon Arayüzü Tanımsızlığı,Financial,HIGH,Mali Hizmetler / ERP Danışmanı,Alt defter hesap kodları eşleştirme tablosunun resmi onayı,OPEN
+BLK-007,Saha Donanım Güvenlik Zinciri ve Röle Kablolama Doğrulama Eksikliği,Safety,CRITICAL,Saha Mühendisliği / İSG Uzmanı,Fotosel ve loop sensörlerinin kuru kontak emniyet test raporunun tanzimi,OPEN
+BLK-008,G0 Yönetişim Kapısı ve İmzalı RACI Atamalarının Tamamlanmamış Olması,Governance,CRITICAL,Çözüm Mimarı / Proje Sponsoru,Kurumsal imza sirküleri ve G0 checklist onayının resmi olarak verilmesi,OPEN

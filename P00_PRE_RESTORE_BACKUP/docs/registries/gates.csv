@@ -1,0 +1,11 @@
+GateId,Phase,Title,ResponsibleRole,Status,BlockerCount,ApprovalDate
+G0,P00,Kurumsal Proje Temeli & Mimari Anayasa,Çözüm Mimarı / Kurumsal Komite,NOT_APPROVED,8,TBD
+G1,P01,Saha Keşfi & Cihaz Envanteri Kabulü,Saha Mühendisi / Güvenlik Şube,NOT_STARTED,0,TBD
+G2,P02,Veri Modeli & Şema Dondurma,Veri Mimarı / Güvenlik Sorumlusu,NOT_STARTED,0,TBD
+G3,P03,Güvenlik & KVKK / PCI-DSS Denetimi,Bilgi Güvenliği Yetkilisi (CISO),NOT_STARTED,0,TBD
+G4,P04,Entegrasyon Portları & Kontrat Doğrulama,Entegrasyon Mimarı / ERP Sorumlusu,NOT_STARTED,0,TBD
+G5,P05,Modüler Monolit Temel İnşası,Baş Yazılım Mimarı,NOT_STARTED,0,TBD
+G6,P06,DEV-LAB Simülasyon Kabulü,Test Mimarı / Kalite Güvence Lideri,NOT_STARTED,0,TBD
+G7,P07,Pilot Saha Kurulumu & Donanım Eşleşmesi,Saha Kurulum Lideri / Donanım Uzmanı,NOT_STARTED,0,TBD
+G8,P08,Mali Mutabakat & UAT Kabulü,Döner Sermaye Müdürü / Mali Denetçi,NOT_STARTED,0,TBD
+G9,P09,Canlıya Geçiş (Go-Live) Kabulü,İcra Kurulu / Rektörlük,NOT_STARTED,0,TBD

@@ -1,0 +1,11 @@
+id,phase,title,requirement_id,type,status,evidence
+TC-001,P00,Kamera Plaka Olayı Yakalama ve Hash Doğrulama,REQ-011,Integration,NOT_RUN,NONE
+TC-002,P00,Döngü Sensörü ve Plaka Korelasyonu Geçiş Kanıtı,REQ-018,Integration,NOT_RUN,NONE
+TC-003,P00,Otopark Oturumu Süre ve Serbest Süre Hesabı,REQ-023,Unit,NOT_RUN,NONE
+TC-004,P00,Tarife Kademeli Fiyat Teklifi ve Charge Üretimi,REQ-026,Unit,NOT_RUN,NONE
+TC-005,P00,Abonelik Mali Hak ve ASManager Yetki Ayrımı,REQ-033,Functional,NOT_RUN,NONE
+TC-006,P00,Sanal POS İdempotency ve Mükerrer Ödeme Engelleme,REQ-035,Security,NOT_RUN,NONE
+TC-007,P00,e-Fatura XML Format ve GİB Şema Doğrulama,REQ-037,Compliance,NOT_RUN,NONE
+TC-008,P00,Alt Defter Çift Taraflı Fiş Borç/Alacak Denkliği,REQ-038,Financial,NOT_RUN,NONE
+TC-009,P00,Alt Defter Ters Kayıt (Reversal) Bütünlüğü,REQ-038,Financial,NOT_RUN,NONE
+TC-010,P00,Saha Ağ Kesintisi ve Yerel Arabellek Dayanıklılığı,REQ-010,Performance,NOT_RUN,NONE

@@ -1,0 +1,20 @@
+{
+  "environment": "DEV_LAB",
+  "features": {
+    "gateRealCommandsEnabled": false,
+    "paymentRealCaptureEnabled": false,
+    "eDocumentRealIssueEnabled": false,
+    "erpRealPostingEnabled": false,
+    "multiEntitySplitSettlementEnabled": false
+  },
+  "safety": {
+    "signedPassageRequired": true,
+    "fourEyesApprovalRequired": true,
+    "hardwareSafetyInterlockOverride": false
+  },
+  "testData": {
+    "useSyntheticPlateObservations": true,
+    "isolateProductionCardholderData": true,
+    "mockAsManagerAccessSync": true
+  }
+}

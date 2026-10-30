@@ -1,0 +1,17 @@
+Id,Title,Category,Metric,Target,Status
+NFR-001,Plaka Okuma ve Tanıma Gecikmesi,Performance,P99 LPR Olay İşleme Süresi,< 500 ms,APPROVED
+NFR-002,Geçiş Kanıtı Korelasyon Hızı,Performance,P95 Korelasyon ve Karar Süresi,< 300 ms,APPROVED
+NFR-003,Ödeme İdempotent İşlem Süresi,Performance,Sanal POS Yanıt ve Fiş Yazımı,< 1500 ms,APPROVED
+NFR-004,Sistem Kullanılabilirlik ve Çalışma Oranı,Reliability,Yıllık Çalışma Süresi (Uptime),>= 99.9%,APPROVED
+NFR-005,Ağ Kesintisi Çevrimdışı Çalışma,Reliability,Kapı Yerel Arabellek Kapasitesi,>= 72 Saat Kesintisiz,APPROVED
+NFR-006,PCI-DSS Kapsam İzolasyonu,Security,PAN ve CVV Saklama Oranı,%0 Sıfır Saklama,APPROVED
+NFR-007,KVKK Veri Maskeleme ve Şifreleme,Security,Log ve İstemci PII Maskelemesi,%100 Maskelenmiş,APPROVED
+NFR-008,Veri Tabanı İletişim Şifreleme,Security,İletim Halindeki Veri (TLS),TLS 1.3 Zorunlu,APPROVED
+NFR-009,Görevler Ayrılığı (SoD) Güvencesi,Security,Yetki İhlal ve Çakışma Oranı,%0 Sıfır İhlal,APPROVED
+NFR-010,Eşzamanlı Kapı ve Şerit Kapasitesi,Scalability,Eşzamanlı Desteklenen Şerit Sayısı,>= 50 Şerit,APPROVED
+NFR-011,Günlük Geçiş Hacmi Ölçeklenebilirliği,Scalability,Günlük İşlenebilir Geçiş Sayısı,>= 100.000 Araç,APPROVED
+NFR-012,VUK 509 e-Fatura Mevzuat Uyumu,Compliance,GİB Standartlarına Uyum Oranı,%100 Tam Uyum,APPROVED
+NFR-013,Alt Defter Çift Taraflı Denge,Compliance,Borç/Alacak Farkı,%0 Sıfır Dengesizlik,APPROVED
+NFR-014,Dağıtık İzlenebilirlik (CorrelationId),Observability,Olay Zarfı İzlenebilirlik Kapsamı,%100 Tüm Olaylar,APPROVED
+NFR-015,Stratejik Sistem ve Audit Logları,Observability,Kritik İşlem Kayıt Oranı,%100 Eksiksiz,APPROVED
+NFR-016,Modüler Monolit Bağımlılık Yalıtımı,Maintainability,Modüller Arası Doğrudan DB Erişimi,%0 Sıfır İhlal,APPROVED

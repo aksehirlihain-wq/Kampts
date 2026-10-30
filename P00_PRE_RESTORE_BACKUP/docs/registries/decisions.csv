@@ -1,0 +1,32 @@
+Id,Title,Category,Impact,Options,DecisionMaker,DecisionDate,Status
+DEC-001,Mali Model ve Tüzel Kişilik Rol Dağılımı,Financial,CRITICAL,"Model A (Döner Sermaye), Model B (Vakıf), Model C (Özel İşletmeci), Model D (Hibrit)",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-002,GV-ASManager Entegrasyon Yöntemi,Integration,CRITICAL,"Resmi REST API, Onaylı İş Emri Kuyruğu, Dosya Tabanlı Entegrasyon",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-003,Donanım Seviyesi İSG Güvenlik Protokolü,Safety,CRITICAL,"Donanımsal Kuru Kontak Röle, Harici Güvenlik PLC, İkili Güvenlik Döngüsü",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-004,Plaka Okuma Doğruluk ve Güven Eşiği,Observation,HIGH,"%80 Eşik, %85 Eşik, %90 Eşik + Manuel İnceleme Kuyruğu",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-005,Otopark Oturumu Serbest Çıkış Süresi,Tariff,HIGH,"15 Dakika, 20 Dakika, 30 Dakika",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-006,Gece ve Hafta Sonu Tarife Ayrımı,Tariff,MEDIUM,"Tek Fiyat Tarifesi, Dinamik Zaman Dilimli Tarife",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-007,Öğrenci ve Personel İndirim Oranları,Tariff,HIGH,"Yüzdesel Sabit İndirim, Sabit Sembolik Ücret, Ücretsiz Kota",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-008,Fiziksel Bariyer Kumanda Otoritesi,Control,CRITICAL,"PTS Doğrudan Kumanda, ASManager Üzerinden Röle, Uç Birim Karar Kontrolörü",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-009,Çevrimdışı Kapı Çalışma ve Arabellek Stratejisi,Resilience,HIGH,"Yerel SQLite Arabelleği, Donanım Flash Bellek, Salt İzin Listesi (Whitelist)",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-010,Kayıp Bilet ve Plakasız Giriş Prosedürü,Operations,MEDIUM,"Sabit Günlük Tavan Ücret, Kimlik Doğrulamalı Manuel Giriş, Güvenlik İncelemesi",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-011,Abonelik İptal ve Kısmi İade Kuralları,Financial,HIGH,"Gün Bazlı Kesinti ile İade, Kalan Süre Kadar Tam İade, İadesiz Abonelik",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-012,Mükerrer Plaka Okuma Zaman Penceresi,Observation,MEDIUM,"60 Saniye, 120 Saniye, 300 Saniye",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-013,Mobil Ödeme ve Bariyer Önü QR Ömrü,Payments,MEDIUM,"90 Saniye Dinamik QR, 180 Saniye Statik-Dinamik Hibrit",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-014,PSP Seçimi ve Hakediş Dağıtım Modeli,Financial,CRITICAL,"Tekil Kamu Bankası Sanal POS, Çoklu Özel PSP ve Split-Settlement Yönlendirmesi",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-015,e-Fatura Entegratör Protokolü,Invoicing,HIGH,"Doğrudan GİB Portalı, Özel Entegratör REST/SOAP API, Kurumsal ERP e-Belge Modülü",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-016,e-Arşiv Fatura Düzenleme Zamanı,Invoicing,HIGH,"Tahsilat Anında Anlık Üretim, Gün Sonu Toplu Düzenleme",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-017,Kişisel Veri (Plaka/Log) Saklama Süresi,Compliance,CRITICAL,"1 Yıl, 2 Yıl, 5 Yıl (Mali Denetim Kapsamında)",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-018,Kamera Görüntüleri Arşivleme Politikası,Compliance,HIGH,"30 Gün Tutma Sonrası Silme, 90 Gün Şifreli Arşiv, Sadece Hash Saklama",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-019,Görevler Ayrılığı (Maker-Checker) Onay Limitleri,Governance,HIGH,"1000 TL Üzeri Çift Onay, 5000 TL Üzeri Yönetici Onayı, Tüm İadeler Çift Onay",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-020,Sistem Yöneticisi Erişim Denetim Seviyesi,Security,HIGH,"Yalnızca Ağ İçi VPN + 2FA, Donanımsal FIDO2 Anahtar Zorunluluğu",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-021,Bariyer Açılmama Durumunda Manuel Müdahale Protokolü,Safety,HIGH,"Güvenlik Butonu ile Açma + Log Kaydı, Otomatik Tahliye Düdüğü, Çağrı Merkezi Onayı",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-022,Araç İhlal ve Ceza Puanı Politikası,Enforcement,MEDIUM,"Kara Listeye Ekleme, İdari Yaptırım Bildirimi, Kampüs Giriş Yasağı",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-023,Ticari Tedarikçi Araçları Giriş Politikası,Operations,MEDIUM,"Günde 1 Saat Ücretsiz, Sözleşmeli Tedarikçi İzni, Tam Ücretli",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-024,VIP ve Protokol Araçları İstisna Tanımları,Governance,MEDIUM,"Rektörlük Onaylı Sürekli İzinli Liste, Dinamik Ziyaretçi Yetkilendirmesi",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-025,Acil Servis Araçları (Ambulans/İtfaiye) Geçiş Kuralı,Safety,CRITICAL,"Optik/Siren Sensörü Otomatik Açma, Plaka Bağımsız Fotosel Önceliği",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-026,Abonelik Mali Hak ve Fiziksel Erişim Senkronizasyonu,Integration,CRITICAL,"Anlık Webhook İle ASManager Güncelleme, 15 Dakikalık Batch İş Emri Kuyruğu",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-027,Otopark Dışı Kampüs İçi Hizmetlerin Ücretlendirilmesi,Legal,CRITICAL,"Yalnızca Otopark Kapsamında Kalma, Hukuki İnceleme Sonrası Kapsam Genişletme",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-028,Kuruş Yuvarlama ve Minor-Unit Hassasiyeti,Financial,HIGH,"Aşağı Yuvarlama (Truncate), Bankacı Yuvarlaması (Half-to-even), Standart Kuruş",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-029,Veritabanı Yüksek Erişilebilirlik ve Replikasyon,Infrastructure,HIGH,"PostgreSQL Streaming Replication, Patroni HA Kümesi, Bulut Yönetilen Veritabanı",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-030,Felaket Kurtarma ve Yedekleme Sıklığı,Infrastructure,HIGH,"Günlük Tam Yedek + Saatlik WAL Arşivi, 15 Dakikalık RPO",TO_ASSIGN,TBD,DECISION_REQUIRED
+DEC-031,Alt Defter ERP Mutabakat Sıklığı ve Modu,Financial,CRITICAL,"Her Tahsilatta Anlık Senkron Fiş, Saatlik Mikro-Batch, Gün Sonu Tekil Yevmiye Fişi",TO_ASSIGN,TBD,DECISION_REQUIRED

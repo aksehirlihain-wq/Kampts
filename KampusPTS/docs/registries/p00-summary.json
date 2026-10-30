@@ -1,0 +1,226 @@
+{
+  "version": "1.1_canonical",
+  "phase": "P00",
+  "status": "P00_SOURCE_READY / G0_NOT_APPROVED",
+  "counts": {
+    "requirements": 40,
+    "nfr": 16,
+    "decisions": 31,
+    "risks": 15,
+    "blockers": 8,
+    "test_cases": 10,
+    "traceability": 56,
+    "gates": 10
+  },
+  "gates": [
+    {
+      "id": "G0",
+      "phase_range": "P00",
+      "title": "Kurumsal Proje Temeli Mimari Anayasa ve Kanıt Kayıtları",
+      "responsible_role": "Çözüm Mimarı / Kurumsal Komite",
+      "status": "NOT_APPROVED",
+      "evidence_required": "Anayasa K-01..K-12 Kütükler G0 Checklist SHA-256 Manifest",
+      "no_go_criteria": "Resmi kurumsal imza sirküleri ve DEC-001 mali model onayı eksikliği"
+    },
+    {
+      "id": "G1",
+      "phase_range": "P01–P04",
+      "title": "Saha Keşfi Cihaz Envanteri ve Entegrasyon Sınırları",
+      "responsible_role": "Saha Mühendisi / Güvenlik Şube",
+      "status": "NOT_STARTED",
+      "evidence_required": "Saha LPR inceleme raporu GV-ASManager 6.3.0 protokol dökümü",
+      "no_go_criteria": "P00 kapısı onaylanmadan saha keşfi başlatılamaz"
+    },
+    {
+      "id": "G2",
+      "phase_range": "P05–P06",
+      "title": "Veri Modeli Şema Dondurma ve İletişim Protokolleri",
+      "responsible_role": "Veri Mimarı / Güvenlik Sorumlusu",
+      "status": "NOT_STARTED",
+      "evidence_required": "EF Core şema tasarımları ADR kayıtları KVKK veri haritası",
+      "no_go_criteria": "Önceki aşamaların tamamlanmamış olması"
+    },
+    {
+      "id": "G3",
+      "phase_range": "P07–P10",
+      "title": "Güvenlik KVKK PCI-DSS ve Dayanıklı Outbox",
+      "responsible_role": "Bilgi Güvenliği Yetkilisi (CISO)",
+      "status": "NOT_STARTED",
+      "evidence_required": "Statik güvenlik analiz raporu (SAST) sızma testi tasarım onayı",
+      "no_go_criteria": "Geliştirme öncesi aşama"
+    },
+    {
+      "id": "G4",
+      "phase_range": "P11–P15",
+      "title": "Tarife Motoru Abonelik ve Finansal Durum Makinesi",
+      "responsible_role": "Entegrasyon Mimarı / ERP Sorumlusu",
+      "status": "NOT_STARTED",
+      "evidence_required": "Tarife kuralları sözleşme testleri durum makinesi testleri",
+      "no_go_criteria": "Port testleri henüz koşulmadı"
+    },
+    {
+      "id": "G5",
+      "phase_range": "P16–P19",
+      "title": "PSP Entegrasyon Portları e-Fatura ve Alt Defter",
+      "responsible_role": "Baş Yazılım Mimarı",
+      "status": "NOT_STARTED",
+      "evidence_required": "Çekirdek modül unit testleri Transactional Outbox testleri",
+      "no_go_criteria": "Çekirdek kodlama henüz başlamadı"
+    },
+    {
+      "id": "G6",
+      "phase_range": "P20–P22",
+      "title": "DEV-LAB Simülasyon İdempotency ve Yük Kabulü",
+      "responsible_role": "Test Mimarı / Kalite Güvence Lideri",
+      "status": "NOT_STARTED",
+      "evidence_required": "Sanal kapı sahte yük ve idempotency simülasyon sonuçları",
+      "no_go_criteria": "Simülasyon ortamı henüz hazır değil"
+    },
+    {
+      "id": "G7",
+      "phase_range": "P23–P28",
+      "title": "Pilot Saha Entegrasyonu ve Donanım Eşleşmesi",
+      "responsible_role": "Saha Kurulum Lideri / Donanım Uzmanı",
+      "status": "NOT_STARTED",
+      "evidence_required": "Pilot kapıda çift döngü ve bariyer kontrol test kanıtları",
+      "no_go_criteria": "Pilot saha tanımlanmadı"
+    },
+    {
+      "id": "G8",
+      "phase_range": "P29–P31",
+      "title": "UAT ERP Mutabakatı ve Mali Kabul",
+      "responsible_role": "Döner Sermaye Müdürü / Mali Denetçi",
+      "status": "NOT_STARTED",
+      "evidence_required": "1000 örnek işlem ERP ve banka alt defter mutabakat kanıtı",
+      "no_go_criteria": "UAT aşamasına gelinmedi"
+    },
+    {
+      "id": "G9",
+      "phase_range": "P32–P33",
+      "title": "Canlıya Geçiş (Go-Live) ve Nihai Devir",
+      "responsible_role": "İcra Kurulu / Rektörlük",
+      "status": "NOT_STARTED",
+      "evidence_required": "Tüm kapı kanıtları geri dönüş (rollback) planı SLA protokolü",
+      "no_go_criteria": "Nihai üretim onayı henüz gündemde değil"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "BLK-001",
+      "phase": "P00",
+      "title": "Mali Model ve Tüzel Kişilik Kararı (DEC-001) Eksikliği",
+      "decision_ids": "DEC-001",
+      "requirement_ids": "REQ-001|REQ-003",
+      "gates": "G0|G4|G5",
+      "blocks": "Hasılat sahibi tüzel kişilik ve MoR netleşmeden ödeme ve fatura tanzim edilemez",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-002",
+      "phase": "P00",
+      "title": "Fiziksel Bariyer Kumanda Otoritesi Kararı (DEC-008) Belirsizliği",
+      "decision_ids": "DEC-008",
+      "requirement_ids": "REQ-004|REQ-020",
+      "gates": "G0|G1|G7",
+      "blocks": "Bariyer kumanda yetkisi netleşmeden saha çıkış kodu yazılamaz (UNKNOWN)",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-003",
+      "phase": "P00",
+      "title": "GV-ASManager 6.3.0 Resmi Entegrasyon Sözleşmesi Yokluğu",
+      "decision_ids": "DEC-002",
+      "requirement_ids": "REQ-009|REQ-033",
+      "gates": "G0|G1|G4",
+      "blocks": "Vendor resmi API arayüzü olmadan personel fiziksel yetki senkronizasyonu başlatılamaz",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-004",
+      "phase": "P00",
+      "title": "Kurumsal PSP Sözleşmesi ve Test Sanal POS Bilgileri Eksikliği",
+      "decision_ids": "DEC-014",
+      "requirement_ids": "REQ-034|REQ-035",
+      "gates": "G0|G5",
+      "blocks": "Sanal POS sözleşmesi ve test anahtarları olmadan ödeme akışı test edilemez",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-005",
+      "phase": "P00",
+      "title": "e-Fatura Entegratörü API Dokümantasyonu ve Test Hesabı Yokluğu",
+      "decision_ids": "DEC-015",
+      "requirement_ids": "REQ-037",
+      "gates": "G0|G5",
+      "blocks": "GİB uyumlu test portalı olmadan e-belge düzenleme entegrasyonu tamamlanamaz",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-006",
+      "phase": "P00",
+      "title": "Kurumsal ERP Hesap Planı ve Entegrasyon Arayüzü Tanımsızlığı",
+      "decision_ids": "DEC-031",
+      "requirement_ids": "REQ-038|REQ-039",
+      "gates": "G0|G8",
+      "blocks": "Alt defter hesap kodları eşleştirme tablosu onaylanmadan ERP aktarımı yapılamaz",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-007",
+      "phase": "P00",
+      "title": "Saha Donanım Güvenlik Zinciri ve Röle Kablolama Doğrulama Eksikliği",
+      "decision_ids": "DEC-003",
+      "requirement_ids": "REQ-008|REQ-016",
+      "gates": "G0|G1|G7",
+      "blocks": "Fotosel ve loop sensörlerinin kuru kontak emniyet test raporu tanzim edilmeden bariyer açılamaz",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-008",
+      "phase": "P00",
+      "title": "G0 Yönetişim Kapısı ve İmzalı RACI Atamalarının Tamamlanmamış Olması",
+      "decision_ids": "DEC-001|DEC-008",
+      "requirement_ids": "REQ-001..040",
+      "gates": "G0",
+      "blocks": "Kurumsal imza sirküleri ve yetkili makam onayı olmadan G0 onaylanamaz",
+      "status": "OPEN"
+    }
+  ],
+  "dec_001": {
+    "id": "DEC-001",
+    "phase": "P00",
+    "title": "Mali Model ve Tüzel Kişilik Rol Dağılımı",
+    "options": "A Üniversite; B Döner sermaye; C Özel işletmeci; D Çoklu tüzel kişilik",
+    "status": "DECISION_REQUIRED",
+    "actual_owner": "TO_ASSIGN",
+    "due_date": "TBD",
+    "evidence": "NONE"
+  },
+  "req_001": {
+    "id": "REQ-001",
+    "phase": "P00",
+    "title": "Kapsam ve Yönetişim Temeli",
+    "requirement": "Kampüs PTS platformu için K-01..K-12 ve A1..A10 değişmezleri ile yetki sınırlarının tanımlanması",
+    "acceptance": "Mimari anayasanın ve kütüklerin G0 checklist ile eksiksiz doğrulanması",
+    "status": "DESIGNED",
+    "owner_role": "Çözüm Mimarı",
+    "gate": "G0"
+  },
+  "nfr_001": {
+    "id": "NFR-001",
+    "phase": "P00",
+    "title": "Kimlik ve Oturum Güvenliği",
+    "requirement": "Sistem oturumları ve API erişimleri için güvenli kimlik doğrulama standardının belirlenmesi",
+    "acceptance": "Mevzuat ve kurumsal BT onaylı kimlik protokolü",
+    "status": "NOT_RUN",
+    "owner_role": "Güvenlik Mimarı",
+    "gate": "G0"
+  },
+  "features_flags": {
+    "gateRealCommandsEnabled": false,
+    "paymentRealCaptureEnabled": false,
+    "eDocumentRealIssueEnabled": false,
+    "erpRealPostingEnabled": false,
+    "multiEntitySplitSettlementEnabled": false
+  }
+}

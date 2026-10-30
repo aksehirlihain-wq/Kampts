@@ -1,0 +1,41 @@
+Id,Title,Category,Priority,Description,Module,Status
+REQ-001,Plaka Okuma ve Olay Yakalama,Observation,CRITICAL,GV-LPR2812-DL kamerasından gelen plaka metni ve güven skorunun yakalanması,LprObservation,APPROVED
+REQ-002,Gözlem Görüntü Hash'leme,Observation,HIGH,LPR kamerasından gelen gözlem görselinin SHA-256 hash ile değişmez şekilde mühürlenmesi,LprObservation,APPROVED
+REQ-003,Çoklu Kamera ve Şerit Desteği,Observation,HIGH,Bir kapıda birden fazla kamera ve şerit gözleminin tekilleştirilerek işlenmesi,LprObservation,APPROVED
+REQ-004,Plaka Format Normalizasyonu,Observation,HIGH,Türkiye ve uluslararası plaka formatlarının standart biçime normalize edilmesi,LprObservation,APPROVED
+REQ-005,Düşük Güven Skorlu Plaka Ayrıştırma,Observation,MEDIUM,Belirli güven eşiği altındaki plaka okumalarının manuel incelemeye sevk edilmesi,LprObservation,APPROVED
+REQ-006,Fiziksel Döngü Sensörü Tetiklemesi,Evidence,CRITICAL,Yeraltı manyetik döngü (loop) sensöründen araç varlık sinyalinin alınması,PassageEvidence,APPROVED
+REQ-007,Fotosel ve Güvenlik Sensörü Entegrasyonu,Evidence,CRITICAL,Fotosel güvenlik sinyali ile araç geçiş kanıtının doğrulanması,PassageEvidence,APPROVED
+REQ-008,Gözlem ve Sensör Korelasyonu,Evidence,CRITICAL,Plaka gözlemi ile döngü sensörünün zaman penceresi içinde eşleştirilerek geçiş kanıtı üretilmesi,PassageEvidence,APPROVED
+REQ-009,Mükerrer Geçiş Filtreleme,Evidence,HIGH,Aynı aracın kısa süreli ardışık tetiklemelerinde mükerrer kanıt üretiminin engellenmesi,PassageEvidence,APPROVED
+REQ-010,Geçiş Yönü Tespiti,Evidence,HIGH,Giriş ve çıkış şeritlerinin ayrıştırılarak geçiş yönünün kesinleştirilmesi,PassageEvidence,APPROVED
+REQ-011,Otopark Mali Oturumu Başlatma,Session,CRITICAL,Giriş geçiş kanıtı ile zaman damgalı otopark mali oturumunun açılması,ParkingSession,APPROVED
+REQ-012,Otopark Mali Oturumu Kapatma,Session,CRITICAL,Çıkış geçiş kanıtı ile otopark oturumunun sonlandırılması ve süre hesabı,ParkingSession,APPROVED
+REQ-013,Serbest Süre (Grace Period) Yönetimi,Session,HIGH,Tanımlı serbest süre içinde yapılan çıkışlarda sıfır ücret uygulanması,ParkingSession,APPROVED
+REQ-014,Açık Kalan Oturumların Zaman Aşımı,Session,MEDIUM,Çıkış kanıtı oluşmayan oturumların kural bazlı zaman aşımına uğratılması,ParkingSession,APPROVED
+REQ-015,İstisnai Oturum Düzeltme,Session,MEDIUM,Saha görevlisi tarafından yetkili ve denetlenebilir oturum düzeltmesi yapılabilmesi,ParkingSession,APPROVED
+REQ-016,Kural Tabanlı Tarife Motoru,Tariff,CRITICAL,Araç sınıfı ve zaman dilimine göre parametrik ücret hesaplanması,TariffEngine,APPROVED
+REQ-017,Personel ve Öğrenci İndirimleri,Tariff,HIGH,Üniversite personeli ve öğrencilerine özel tarife kurallarının uygulanması,TariffEngine,APPROVED
+REQ-018,Kademeli Ücretlendirme,Tariff,HIGH,İlk saatler ve devam eden saatler için farklı birim fiyat hesaplanması,TariffEngine,APPROVED
+REQ-019,Tavan ve Taban Fiyat Sınırları,Tariff,MEDIUM,Günlük maksimum ve minimum otopark ücret tavanlarının uygulanması,TariffEngine,APPROVED
+REQ-020,Fiyat Teklifi (Quote) Üretimi,Tariff,HIGH,Ödeme öncesinde şeffaf ve detaylı fiyat teklifi nesnesinin oluşturulması,TariffEngine,APPROVED
+REQ-021,Abonelik Planları Tanımlama,Subscription,HIGH,Aylık ve yıllık araç bazlı otopark abonelik planlarının oluşturulması,Subscription,APPROVED
+REQ-022,Mali Hak Takibi (financial=ACTIVE),Subscription,CRITICAL,Abonenin ödeme durumuna göre mali hakkının bağımsız olarak takip edilmesi,Subscription,APPROVED
+REQ-023,Fiziksel Yetki Ayrımı (access=VERIFIED_ACTIVE),Subscription,CRITICAL,Mali hakkın ASManager teyidi olmadan doğrudan bariyer yetkisine dönüşmemesi,Subscription,APPROVED
+REQ-024,Çoklu Araçlı Tek Abone Desteği,Subscription,MEDIUM,Tek bir abonelik altında birden fazla plaka tanımlanabilmesi ve eşzamanlılık kontrolü,Subscription,APPROVED
+REQ-025,Abonelik Süre Sonu ve Yenileme,Subscription,HIGH,Abonelik bitiş tarihine yaklaşan kullanıcılara bildirim ve otomatik yenileme,Subscription,APPROVED
+REQ-026,Sanal POS ile Kredi Kartı Tahsilatı,Payments,CRITICAL,Lisanslı PSP üzerinden 3D Secure destekli kart tahsilatının gerçekleştirilmesi,Payments,APPROVED
+REQ-027,Ödeme Idempotency Güvencesi,Payments,CRITICAL,Aynı tahakkuk için tekrarlı isteklerde mükerrer tahsilatın kesin olarak engellenmesi,Payments,APPROVED
+REQ-028,Mobil QR Kod ile Ödeme,Payments,HIGH,Bariyerde veya ödeme noktasında dinamik QR kod üreterek hızlı ödeme alma,Payments,APPROVED
+REQ-029,Ödeme İade ve İptal Yönetimi,Payments,HIGH,Yetkili personel tarafından PSP üzerinden iade ve iptal işlemlerinin başlatılması,Payments,APPROVED
+REQ-030,PSP Webhook Doğrulama,Payments,CRITICAL,Ödeme kuruluşu callback bildirimlerinin HMAC imzası ile sunucu-sunucu doğrulanması,Payments,APPROVED
+REQ-031,e-Fatura ve e-Arşiv Üretimi,Invoicing,CRITICAL,Tahsil edilen ücretler için GİB standartlarında e-Fatura/e-Arşiv belgesi tanzimi,Invoicing,APPROVED
+REQ-032,Fatura İptal ve İade Belgesi,Invoicing,HIGH,İptal edilen işlemler için e-Fatura iptal veya gider pusulası süreçlerinin işletilmesi,Invoicing,APPROVED
+REQ-033,Vergi ve Tevkifat Ayrımı,Invoicing,HIGH,Fatura kalemlerinde KDV ve varsa tevkifat oranlarının mevzuata uygun hesaplanması,Invoicing,APPROVED
+REQ-034,PTS Çift Taraflı Alt Defteri,Subledger,CRITICAL,Her mali işlem için borç/alacak denkliğini sağlayan alt defter fişi oluşturulması,Subledger,APPROVED
+REQ-035,Silinemez Yevmiye Kaydı Disiplini,Subledger,CRITICAL,POSTED statüsündeki fişlerin değiştirilememesi ve silinememesi,Subledger,APPROVED
+REQ-036,Ters Kayıt (Reversal) ile Düzeltme,Subledger,CRITICAL,Muhasebe hatalarının ve iadelerin yalnızca ters kayıt fişiyle dengelenmesi,Subledger,APPROVED
+REQ-037,ERP Muhasebe Fiş Aktarımı,ErpSync,CRITICAL,Alt defter kayıtlarının kurumsal ERP sistemine yevmiye fişi olarak aktarılması,ErpSync,APPROVED
+REQ-038,Gün Sonu Mutabakat Raporlama,ErpSync,HIGH,PTS alt defteri, PSP tahsilatları ve ERP kayıtları arasında günlük mutabakat raporu,ErpSync,APPROVED
+REQ-039,Yetkisiz Geçiş ve İhlal Tespiti,Audit,HIGH,Ödeme yapmadan veya izinsiz geçen araçların ihlal kaydı olarak etiketlenmesi,Audit,APPROVED
+REQ-040,Kişisel Veri ve Güvenlik Denetim İzi,Audit,CRITICAL,Tüm kullanıcı ve sistem işlemlerinin değiştirilemez denetim günlüğüne kaydedilmesi,Audit,APPROVED

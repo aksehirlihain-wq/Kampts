@@ -1,0 +1,41 @@
+id,phase,title,requirement,acceptance,status,owner_role,gate
+REQ-001,P00,Kapsam/Yönetişim,Kampüs PTS platformu için K-01..K-12 ve A1..A10 değişmezleri ile yetki sınırlarının tanımlanması,Mimari anayasanın ve kütüklerin G0 checklist ile eksiksiz doğrulanması,DESIGNED,Çözüm Mimarı,G0
+REQ-002,P00,Kurumsal Otorite ve Karar Sınırları,ASManager fiziksel yetki otoritesi ile PTS mali otoritesinin ve ERP muhasebe otoritesinin ayrıştırılması,Makam onayları olmadan yetki sınırlarının baypas edilmemesi,DESIGNED,Kurumsal Danışman,G0
+REQ-003,P00,Değişmez Alt Defter Modeli,Tüm mali hareketlerin silinemez ve yalnız ters kayıtla düzeltilebilir çift taraflı alt deftere kaydedilmesi,Alt defter borç/alacak denkliğinin her işlemde sağlanması,DESIGNED,Finans Mimarı,G0
+REQ-004,P00,Mali Hak ve Fiziksel Yetki Ayrımı,financial=ACTIVE durumu ile access=VERIFIED_ACTIVE durumunun birbirinden bağımsız tutulması,ASManager teyidi olmadan bariyer açma yetkisinin verilmemesi,DESIGNED,Entegrasyon Mimarı,G0
+REQ-005,P00,Güvenli Varsayılan Yapılandırma,Tüm gerçek operasyonel canlı bayrakların (bariyer/PSP/e-belge/ERP) varsayılan olarak false olması,features.example.json içinde hiçbir canlı bayrağın true olmaması,DESIGNED,Güvenlik Mimarı,G0
+REQ-006,P01,GV-LPR2812-DL Kamera Envanteri ve Açı Tespiti,Kapılardaki LPR kameralarının montaj açısı ve ağ erişim protokollerinin tespiti,Saha inceleme tutanağının tanzim edilmesi,DESIGNED,Saha Mühendisi,G1
+REQ-007,P01,Manyetik Döngü Sensörü Tespiti,Giriş ve çıkış şeritlerindeki araç algılama döngülerinin fiziksel varlığının doğrulanması,Kuru kontak röle test raporunun tamamlanması,DESIGNED,Saha Mühendisi,G1
+REQ-008,P01,Fotosel ve Güvenlik Donanımı İncelemesi,Araç sıkışma önleme fotosellerinin kablolama ve güvenlik zincirinin incelenmesi,İSG güvenlik raporunun imzalanması,DESIGNED,İSG Uzmanı,G1
+REQ-009,P01,GV-ASManager 6.3.0 Arayüz Tespiti,ASManager sunucusu erişim protokolleri ve yetki veri yapısının tespiti,Vendor resmi entegrasyon arayüz dokümanının doğrulanması,DESIGNED,Entegrasyon Mühendisi,G1
+REQ-010,P01,Kapı Yerel Arabellek ve Elektrik Altyapısı,Ağ kesintisinde kapı uç biriminin kesintisiz çalışması için KGK süresinin ölçümü,Güç ve ağ kesinti simülasyon raporu,DESIGNED,Altyapı Mühendisi,G1
+REQ-011,P02,Plaka Okuma ve Olay Yakalama (PLATE_RECOGNIZED),Kameradan gelen plaka metni ve güven skorunun yakalanması,Gözlem nesnesinin zaman damgalı olarak outbox'a yazılması,DESIGNED,Yazılım Mühendisi,G2
+REQ-012,P02,Gözlem Görüntü Hash Doğrulama,LPR görselinin SHA-256 hash'inin çıkarılarak değişmez şekilde mühürlenmesi,Görsel hash bütünlüğünün doğrulanması,DESIGNED,Yazılım Mühendisi,G2
+REQ-013,P02,Çoklu Kamera ve Şerit Tekilleştirme,Aynı şeritteki ikincil kameralardan gelen gözlemlerin zaman penceresinde tekilleştirilmesi,Mükerrer gözlem oranının sıfır olması,DESIGNED,Yazılım Mühendisi,G2
+REQ-014,P02,Plaka Karakter Normalizasyonu,Türkiye standartlarındaki boşluk ve özel karakterlerin normalize edilmesi,Standartlaştırılmış plaka format çıktısı,DESIGNED,Yazılım Mühendisi,G2
+REQ-015,P02,Düşük Güven Skorlu Plaka Kuyruğu,Eşik altı plaka okumalarının operatör manuel inceleme kuyruğuna aktarılması,İstisna kuyruğu akışının sağlanması,DESIGNED,Yazılım Mühendisi,G2
+REQ-016,P03,Fiziksel Döngü Sensörü Tetiklemesi,Manyetik döngüden gelen araç varlık sinyalinin yakalanması,Sensör tetikleme olayının kaydedilmesi,DESIGNED,Saha Yazılım Mühendisi,G2
+REQ-017,P03,Gözlem ve Döngü Korelasyonu,Plaka gözlemi ile döngü sinyalinin zaman korelasyonu ile eşleştirilmesi,Eşleşen gözlemlerin kanıt oluşturması,DESIGNED,Yazılım Mühendisi,G2
+REQ-018,P03,Geçiş Kanıtı Üretimi (PASSAGE_CONFIRMED),Fiziksel geçişin çift sensörle kanıtlanarak kesin geçiş olayına dönüştürülmesi,PASSAGE_CONFIRMED olay zarfının üretilmesi,DESIGNED,Yazılım Mühendisi,G2
+REQ-019,P03,Mükerrer Geçiş Engelleme,Ardı ardına gelen sahte tetiklemelerin filtrelenmesi,Zaman tolerans kontrolünün sağlanması,DESIGNED,Yazılım Mühendisi,G2
+REQ-020,P03,Geçiş Yönü Kesinleştirme,Giriş ve çıkış yön vektörünün sensör sırası ile doğrulanması,Ters yön geçiş uyarısının üretilmesi,DESIGNED,Yazılım Mühendisi,G2
+REQ-021,P04,Otopark Mali Oturumu Başlatma,Giriş geçiş kanıtı ile zaman damgalı mali oturumun başlatılması,Oturum kaydının veritabanına işlenmesi,DESIGNED,Backend Geliştirici,G4
+REQ-022,P04,Otopark Mali Oturumu Kapatma,Çıkış geçiş kanıtı ile otopark oturumunun sonlandırılması ve süre hesabı,Net otopark süresinin hesaplanması,DESIGNED,Backend Geliştirici,G4
+REQ-023,P04,Serbest Süre (Grace Period) Yönetimi,Tanımlı serbest süre içinde yapılan çıkışlarda sıfır ücret uygulanması,Sıfır bedelli oturum kapatma kaydı,DESIGNED,Backend Geliştirici,G4
+REQ-024,P04,Açık Oturum Zaman Aşımı,Çıkış kanıtı oluşmayan oturumların kural bazlı zaman aşımına uğratılması,Zaman aşımı istisna kaydı oluşturulması,DESIGNED,Backend Geliştirici,G4
+REQ-025,P04,İstisnai Oturum Düzeltme,Yetkili saha personeli tarafından denetlenebilir oturum kapatma ve süre düzeltmesi,Çift onaylı ve loglu oturum düzeltmesi,DESIGNED,Backend Geliştirici,G4
+REQ-026,P05,Kural Tabanlı Tarife Motoru,Araç sınıfı ve zaman dilimine göre parametrik ücret hesaplanması,Fiyat teklifi (Quote) nesnesinin üretilmesi,DESIGNED,Tarife Uzmanı,G4
+REQ-027,P05,Personel ve Öğrenci İndirimi,Üniversite personeli ve öğrencilerine özel tarife kurallarının işletilmesi,İndirim kalemlerinin şeffaf hesaplanması,DESIGNED,Tarife Uzmanı,G4
+REQ-028,P05,Kademeli ve Dinamik Ücretlendirme,İlk saatler ve devam eden süreler için farklı birim fiyat hesaplanması,Kademeli ücret dökümünün üretilmesi,DESIGNED,Tarife Uzmanı,G4
+REQ-029,P05,Tavan ve Taban Ücret Sınırları,Günlük maksimum ve minimum ücret sınırlarının uygulanması,Tavan fiyat aşım kontrolü,DESIGNED,Tarife Uzmanı,G4
+REQ-030,P05,Borç Tahakkuku (Charge) Oluşturma,Kesinleşen oturum bedelinin tahakkuk nesnesine dönüştürülmesi,Tahakkuk kaydının alt defterle eşleşmesi,DESIGNED,Finans Geliştirici,G4
+REQ-031,P06,Abonelik Planları Yönetimi,Aylık ve yıllık araç bazlı otopark abonelik planlarının tanımlanması,Abonelik plan kontratının oluşturulması,DESIGNED,İş Analisti,G4
+REQ-032,P06,Abonelik Mali Hak Takibi,Abonenin ödeme durumuna göre mali hakkının (financial=ACTIVE) bağımsız izlenmesi,Ödeme teyidi ile mali hak durumunun güncellenmesi,DESIGNED,Finans Geliştirici,G4
+REQ-033,P06,ASManager Yetki Senkronizasyonu,Mali hakkın onaylı iş emri kuyruğu üzerinden ASManager erişim hakkına aktarılması,ASManager teyit cevabının işlenmesi,DESIGNED,Entegrasyon Geliştirici,G4
+REQ-034,P07,Sanal POS Kredi Kartı Tahsilatı,Lisanslı PSP üzerinden 3D Secure destekli kart tahsilatının yapılması,Başarılı S2S ödeme teyidinin alınması,DESIGNED,Ödeme Geliştirici,G5
+REQ-035,P07,Ödeme Idempotency Koruması,Aynı tahakkuk için mükerrer isteklerde çift tahsilatın kesin engellenmesi,Idempotency anahtarı ile tekil işlem güvencesi,DESIGNED,Ödeme Geliştirici,G5
+REQ-036,P07,Dinamik QR Kod ile Ödeme,Bariyerde araç sürücüsüne dinamik QR kod üreterek hızlı ödeme alma,QR ödeme oturumunun doğrulanması,DESIGNED,Ödeme Geliştirici,G5
+REQ-037,P08,GİB Standartlarında e-Fatura Tanzimi,Tahsil edilen ücretler için 509 VUK tebliğine uygun e-Fatura/e-Arşiv belgesi tanzimi,Entegratörden onaylı UBL-TR XML üretimi,DESIGNED,Maliye Uzmanı,G5
+REQ-038,P08,Alt Defter Çift Taraflı Kayıt Üretimi,Tahsilat ve fatura için denk borç/alacak yevmiye fişinin oluşturulması,Double-entry fiş denkliğinin sağlanması,DESIGNED,Muhasebe Geliştirici,G5
+REQ-039,P09,Kurumsal ERP Muhasebe Aktarımı,Alt defter kayıtlarının kurumsal ERP sistemine yevmiye fişi olarak aktarılması,ERP fiş numarasının mutabakatla eşleşmesi,DESIGNED,ERP Danışmanı,G8
+REQ-040,P09,Denetim Günlüğü ve KVKK Maskeleme,Tüm kullanıcı ve sistem işlemlerinin değiştirilemez denetim izine maskeli kaydedilmesi,PII içermeyen tam audit log akışı,DESIGNED,Güvenlik Denetçisi,G3
